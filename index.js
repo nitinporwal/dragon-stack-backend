@@ -49,12 +49,35 @@
 
 /* engine.js code execution */
 
+// const GenerationEngine = require('./engine');
+
+// const engine = new GenerationEngine();
+
+// engine.start();
+
+// setTimeout(() => {
+//     engine.stop();
+// }, 20000);
+
+/* ================================================ */
+
+/* real backend app starts */
+
+const express = require('express');
+
+const app = express();
+
 const GenerationEngine = require('./engine');
 
 const engine = new GenerationEngine();
 
+const port = 3000;
 engine.start();
 
-setTimeout(() => {
-    engine.stop();
-}, 20000);
+app.get('/dragon/new', (req, res) => {
+    res.json({dragon: engine.generation.newDragon()})
+});
+
+app.listen(port, () => {
+    console.log(`listening to port ${port}`)
+});
