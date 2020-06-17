@@ -1,4 +1,4 @@
-const TRAITS = require('./traits.json');
+const TRAITS = require('../data/traits.json');
 
 const DEFALT_PROPERTIES = {
     get birthDate() {

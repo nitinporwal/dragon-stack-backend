@@ -1,7 +1,7 @@
 // import { REFRESH_RATE, SECOND} from './config';
-const {REFRESH_RATE, SECOND} = require('./config');
+const {REFRESH_RATE, SECOND} = require('../config');
 // import Dragon from './dragon';
-const Dragon = require('./dragon');
+const Dragon = require('../dragon');
 const refreshRate = REFRESH_RATE * SECOND;
 
 class Generation {
