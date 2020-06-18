@@ -3,7 +3,7 @@
 // const Dragon = require('./dragon');
 
 // const baloo = new Dragon({
-//     birthDate: new Date(),
+//     birthdate: new Date(),
 //     nickName: "baloo"
 // });
 
@@ -11,7 +11,7 @@
 
 // setTimeout(() => {
 //     const fooey = new Dragon({
-//         birthDate: new Date(),
+//         birthdate: new Date(),
 //         nickName: "fooey"
 //     });
 //     console.log('fooey', fooey);
