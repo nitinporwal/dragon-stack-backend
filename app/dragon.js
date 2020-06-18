@@ -17,14 +17,16 @@ const DEFALT_PROPERTIES = {
             traits.push({traitType, traitValue}) 
         })
         return traits;
-    }
+    },
+    generationId: undefined
 }
 
 class Dragon {
-    constructor ({birthDate, nickName, traits}={}) {
+    constructor ({birthDate, nickName, traits, generationId}={}) {
         this.birthDate=birthDate || DEFALT_PROPERTIES.birthDate;
         this.nickName=nickName || DEFALT_PROPERTIES.nickName;
         this.traits=traits || DEFALT_PROPERTIES.randomTraits;
+        this.generationId=generationId || DEFALT_PROPERTIES.generationId;
     }
 }
 

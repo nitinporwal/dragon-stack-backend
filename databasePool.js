@@ -6,8 +6,8 @@ const pool = new Pool(databaseconfiguration);
 
 module.exports = pool;
 
-pool.query('SELECT * FROM generation').then(res => {
-    console.log('response.rows', res.rows);
-}).catch(err => {
-    return console.log('err', err);
-});
+// pool.query('SELECT * FROM generation').then(res => {
+//     console.log('response.rows', res.rows);
+// }).catch(err => {
+//     return console.log('err', err);
+// });
